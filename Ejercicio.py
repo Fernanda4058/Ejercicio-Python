@@ -5,7 +5,7 @@ import seaborn as sns
 from scipy import stats
 
 
-df = pd.read_csv('./Estadistica Descriptiva/housing.csv')
+df = pd.read_csv('./housing.csv')
 
 
 print(df.head())
@@ -33,7 +33,7 @@ estadisticas = pd.DataFrame({
 print("\nEstadísticas Descriptivas de median_house_value:\n")
 print(estadisticas.to_string(index=False))
 
-print("\nTabla de Frecuencias:\n")
+print("Tabla de Frecuencias:")
 print(tabla_frecuencias.head(10))  
 
 plt.figure(figsize=(12, 6))
